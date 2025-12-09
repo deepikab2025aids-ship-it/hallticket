@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Digital Hall Ticket Download </title>
+<script>
+function validateform();
+let name=document.getElementById("name").value;
+let password=document.getElementById("password").value;
+if(name===" ")
+{
+alert("Name should not be empty");
+return false;
+}
+if(password.length<6)
+{
+alert("Password must be alteast 6 characters");
+return false;
+}
+msg.style.text-color="Green";
+document.getElementById("msg").innerHTML="You have successfully moved to your Download page");
+return true;
+}
+</script>
+</head>
+<body bgcolor="blue"><center><span style="text-color=white">
+<h1> HALL TICKET DOWNLOAD PAGE </H1>
+<br><br>
+<form onsubmit="validateform();">
+<label>NAME</label>
+<input type="text" id="name"><br><br>
+<label>PASSWORD</label>
+<input type="password" id="password"><br>
+<br></span>
+
+<input type="submit" value="submit"><br><br>
+<input type="button" id="msg"value="Download"><br>
+<a href="file:///C:/Users/USER/Desktop/hallticket.html">Download</a>
+</body>
+</html>
